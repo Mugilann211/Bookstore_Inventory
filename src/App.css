@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+div {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  background-color: #6e6904;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4000;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Filter Styles */
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-container input,
+.filter-container select {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  div {
+    padding: 10px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
